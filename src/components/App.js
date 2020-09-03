@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import List from '../components/List';
-import { connect, Provider } from 'react-redux';
+import { connect } from 'react-redux';
 import  ActionButton from './ActionButton';
 import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 import { sort } from '../actions';
@@ -51,8 +51,7 @@ class App extends Component {
           <p className="App-intro">{this.state.apiResponse}</p>
           <h2>Title</h2>
           <Droppable
-            droppab
-            leId="all-lists"
+            droppableId="all-lists"
             direction="horizontal"
             type="list"
           >
